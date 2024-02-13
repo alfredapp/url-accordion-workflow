@@ -354,6 +354,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6F16DDFD-6F11-4616-9F93-C6A0675A2722</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -371,25 +390,6 @@
 			<string>5D053FB8-EBEB-4DB7-995D-DC221DEB7F4E</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>6F16DDFD-6F11-4616-9F93-C6A0675A2722</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -472,38 +472,6 @@
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:paste}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>5</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>Paste</string>
-						<key>uid</key>
-						<string>44D34DF7-0E99-4642-8734-5129B50B3AAA</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Copy</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>2EDDB06E-9D0A-412C-B4BD-FCECCCBCE236</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
 						<string></string>
 						<key>matchcasesensitive</key>
 						<false/>
@@ -526,6 +494,38 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>2C9D4FCB-68CB-4C73-A1FE-3C124069811A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:paste}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Paste</string>
+						<key>uid</key>
+						<string>44D34DF7-0E99-4642-8734-5129B50B3AAA</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Copy</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>2EDDB06E-9D0A-412C-B4BD-FCECCCBCE236</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -671,8 +671,8 @@ Shorten and expand URLs via the  `shorturl` and `longurl` keywords.
 
 ![Keyword to expand URL](images/about/longurl.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt;: Copy result to clipboard.
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Copy result and paste to frontmost app.
+* &lt;kbd&gt;↩&lt;/kbd&gt; Copy result to clipboard.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy result and paste to frontmost app.
 
 Alternatively, use the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/).
 
