@@ -309,6 +309,8 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>{var:shorten_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Shorten URL with {var:service}</string>
 				<key>text</key>
@@ -639,6 +641,8 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>{var:expand_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Expand shortened URL</string>
 				<key>text</key>
