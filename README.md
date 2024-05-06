@@ -12,8 +12,8 @@ Shorten and expand URLs via the  `shorturl` and `longurl` keywords.
 
 ![Keyword to expand URL](Workflow/images/about/longurl.png)
 
-* <kbd>↩&#xFE0E;</kbd>: Copy result to clipboard.
-* <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd>: Copy result and paste to frontmost app.
+* <kbd>↩&#xFE0E;</kbd> Copy result to clipboard.
+* <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Copy result and paste to frontmost app.
 
 Alternatively, use the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/).
 
